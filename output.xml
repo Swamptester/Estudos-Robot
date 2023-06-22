@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230516 11:35:35.845" rpa="false" schemaversion="3">
+<suite id="s1" name="WebTesting" source="C:\CURSO UDEMY\RobotFramework\WebTesting">
+<suite id="s1-s1" name="Amazon Testes  Gherkin Bdd" source="C:\CURSO UDEMY\RobotFramework\WebTesting\amazon_testes _gherkin_bdd.robot">
+<test id="s1-s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="13">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230516 11:35:36.397" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230516 11:35:40.047" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230516 11:35:40.047" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</msg>
+<status status="FAIL" starttime="20230516 11:35:36.396" endtime="20230516 11:35:40.159"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230516 11:35:40.159" endtime="20230516 11:35:40.159"/>
+</kw>
+<status status="FAIL" starttime="20230516 11:35:36.396" endtime="20230516 11:35:40.159"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230516 11:35:40.161" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230516 11:35:40.161" endtime="20230516 11:35:40.162"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230516 11:35:40.162" endtime="20230516 11:35:40.162"/>
+</kw>
+<status status="PASS" starttime="20230516 11:35:40.161" endtime="20230516 11:35:40.162"/>
+</kw>
+<doc>esse teste verifica o menu Eletrônicos do site amazon.com.br
+e verifica o título da página</doc>
+<tag>categorias</tag>
+<tag>Menus</tag>
+<status status="FAIL" starttime="20230516 11:35:36.394" endtime="20230516 11:35:40.162">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</status>
+</test>
+<test id="s1-s1-t2" name="Caso de teste 02 - Categoria &quot;Computadores e Informática&quot;" line="23">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230516 11:35:40.170" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230516 11:35:43.503" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230516 11:35:43.503" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</msg>
+<status status="FAIL" starttime="20230516 11:35:40.170" endtime="20230516 11:35:43.507"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230516 11:35:43.508" endtime="20230516 11:35:43.508"/>
+</kw>
+<status status="FAIL" starttime="20230516 11:35:40.169" endtime="20230516 11:35:43.508"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230516 11:35:43.511" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230516 11:35:43.510" endtime="20230516 11:35:43.511"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230516 11:35:43.511" endtime="20230516 11:35:43.511"/>
+</kw>
+<status status="PASS" starttime="20230516 11:35:43.510" endtime="20230516 11:35:43.511"/>
+</kw>
+<doc>esse teste acessa o menu Eletrônicos do site amazon.com.br
+e verifica a categoria Computadores e informática</doc>
+<tag>categorias</tag>
+<tag>Menus</tag>
+<status status="FAIL" starttime="20230516 11:35:40.168" endtime="20230516 11:35:43.512">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</status>
+</test>
+<test id="s1-s1-t3" name="Caso de teste 03 - Pesquisa de um Produto" line="35">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230516 11:35:47.613" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230516 11:35:50.948" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230516 11:35:50.948" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</msg>
+<status status="FAIL" starttime="20230516 11:35:47.612" endtime="20230516 11:35:50.950"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230516 11:35:50.950" endtime="20230516 11:35:50.950"/>
+</kw>
+<status status="FAIL" starttime="20230516 11:35:43.522" endtime="20230516 11:35:50.951"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230516 11:35:50.953" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230516 11:35:50.953" endtime="20230516 11:35:50.953"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230516 11:35:50.953" endtime="20230516 11:35:50.954"/>
+</kw>
+<status status="PASS" starttime="20230516 11:35:50.952" endtime="20230516 11:35:50.954"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto.</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20230516 11:35:43.521" endtime="20230516 11:35:50.954">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</status>
+</test>
+<doc>Essa suíte testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230516 11:35:35.885" endtime="20230516 11:35:50.962"/>
+</suite>
+<suite id="s1-s2" name="Amazon Testes" source="C:\CURSO UDEMY\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-s2-t1" name="Caso de teste 02 - Pesquisa de um Produto" line="169">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230516 11:35:50.976" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230516 11:35:54.332" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230516 11:35:54.332" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</msg>
+<status status="FAIL" starttime="20230516 11:35:50.976" endtime="20230516 11:35:54.334"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20230516 11:35:54.334" endtime="20230516 11:35:54.335"/>
+</kw>
+<status status="FAIL" starttime="20230516 11:35:50.975" endtime="20230516 11:35:54.335"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230516 11:35:54.337" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230516 11:35:54.337" endtime="20230516 11:35:54.337"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230516 11:35:54.338" endtime="20230516 11:35:54.338"/>
+</kw>
+<status status="PASS" starttime="20230516 11:35:54.336" endtime="20230516 11:35:54.338"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto.</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20230516 11:35:50.974" endtime="20230516 11:35:54.339">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+Current browser version is 113.0.5672.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C337D3]
+	(No symbol) [0x00BC8B81]
+	(No symbol) [0x00ACB36D]
+	(No symbol) [0x00AEED6D]
+	(No symbol) [0x00AE9B90]
+	(No symbol) [0x00AE6FC9]
+	(No symbol) [0x00B21ED5]
+	(No symbol) [0x00B21B2C]
+	(No symbol) [0x00B1B216]
+	(No symbol) [0x00AF0D97]
+	(No symbol) [0x00AF253D]
+	GetHandleVerifier [0x00EAABF2+2510930]
+	GetHandleVerifier [0x00ED8EC1+2700065]
+	GetHandleVerifier [0x00EDC86C+2714828]
+	GetHandleVerifier [0x00CE3480+645344]
+	(No symbol) [0x00BD0FD2]
+	(No symbol) [0x00BD6C68]
+	(No symbol) [0x00BD6D4B]
+	(No symbol) [0x00BE0D6B]
+	BaseThreadInitThunk [0x767C00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77347B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347B1E+238]
+</status>
+</test>
+<doc>Essa suíte testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230516 11:35:50.966" endtime="20230516 11:35:54.346"/>
+</suite>
+<status status="FAIL" starttime="20230516 11:35:35.847" endtime="20230516 11:35:54.350"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">busca_produtos</stat>
+<stat pass="0" fail="2" skip="0">categorias</stat>
+<stat pass="0" fail="2" skip="0">lista_busca</stat>
+<stat pass="0" fail="2" skip="0">Menus</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="WebTesting">WebTesting</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Amazon Testes  Gherkin Bdd">WebTesting.Amazon Testes  Gherkin Bdd</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Amazon Testes">WebTesting.Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

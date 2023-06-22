@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230318 09:41:47.777" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon Testes  Gherkin Bdd" source="C:\CURSO UDEMY\RobotFramework\WebTesting\amazon_testes _gherkin_bdd.robot">
+<test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="13">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230318 09:41:48.017" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230318 09:41:48.017" endtime="20230318 09:41:49.133"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230318 09:41:49.134" endtime="20230318 09:41:49.261"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:48.017" endtime="20230318 09:41:49.261"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" library="amazon_resources">
+<kw name="Acessar a home page do site Amazon.com.br" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230318 09:41:49.266" level="INFO">Opening url 'http://www.amazon.com.br/'</msg>
+<status status="PASS" starttime="20230318 09:41:49.265" endtime="20230318 09:41:51.461"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${BARRA_DE_MENUS}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${BARRA_DE_MENUS}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${BARRA_DE_MENUS}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230318 09:41:51.496" level="INFO">Element '//div[@id='nav-xshop']' is displayed.</msg>
+<status status="PASS" starttime="20230318 09:41:51.461" endtime="20230318 09:41:51.496"/>
+</kw>
+<msg timestamp="20230318 09:41:51.496" level="INFO">${BARRA_DE_MENUS} = True</msg>
+<status status="PASS" starttime="20230318 09:41:51.461" endtime="20230318 09:41:51.496"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${BARRA_DE_MENUS}' == 'False'</arg>
+<arg>reload Page</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230318 09:41:51.496" endtime="20230318 09:41:51.496"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:51.859" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-107.png"&gt;&lt;img src="selenium-screenshot-107.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:51.496" endtime="20230318 09:41:51.859"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:49.264" endtime="20230318 09:41:51.860"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:49.263" endtime="20230318 09:41:51.860"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" library="amazon_resources">
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" library="amazon_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:41:51.862" endtime="20230318 09:41:51.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230318 09:41:51.895" level="INFO">Clicking element '//a[contains(.,'Eletrônicos')]'.</msg>
+<status status="PASS" starttime="20230318 09:41:51.894" endtime="20230318 09:41:54.231"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='a-size-base a-color-base apb-browse-refinements-indent-1 a-text-bold'][contains(.,'Eletrônicos e Tecnologia')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:41:54.231" endtime="20230318 09:41:54.344"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:54.756" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-108.png"&gt;&lt;img src="selenium-screenshot-108.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:54.344" endtime="20230318 09:41:54.756"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:51.861" endtime="20230318 09:41:54.756"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:51.860" endtime="20230318 09:41:54.756"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" library="amazon_resources" sourcename="Então o título da página deve ficar &quot;${TITULO}&quot;">
+<kw name="Verificar se o título da página fica &quot;${TITULO}&quot;" library="amazon_resources" sourcename="Verificar se o título da página fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230318 09:41:54.795" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<status status="PASS" starttime="20230318 09:41:54.758" endtime="20230318 09:41:54.795"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:55.365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-109.png"&gt;&lt;img src="selenium-screenshot-109.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:54.795" endtime="20230318 09:41:55.365"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:54.757" endtime="20230318 09:41:55.365"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:54.757" endtime="20230318 09:41:55.365"/>
+</kw>
+<kw name="E o texto &quot;Eletrônicos e Tecnologia&quot; deve ser exibido na página" library="amazon_resources" sourcename="E o texto &quot;${frase}&quot; deve ser exibido na página">
+<kw name="Verificar se aparece a frase &quot;${FRASE}&quot;" library="amazon_resources" sourcename="Verificar se aparece a frase &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230318 09:41:55.367" endtime="20230318 09:41:55.458"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HEADER_DEPARTAMENTOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:41:55.459" endtime="20230318 09:41:55.550"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:55.974" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-110.png"&gt;&lt;img src="selenium-screenshot-110.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:55.550" endtime="20230318 09:41:55.974"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:55.366" endtime="20230318 09:41:55.974"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:55.366" endtime="20230318 09:41:55.974"/>
+</kw>
+<kw name="E a categoria &quot;Computadores e Informática&quot; deve ser exibida na página" library="amazon_resources" sourcename="E a categoria &quot;${NOME_CATEGORIA}&quot; deve ser exibida na página">
+<kw name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;" library="amazon_resources" sourcename="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//span[@dir='auto'][contains(.,'${NOME_CATEGORIA}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230318 09:41:56.071" level="INFO">Element '//span[@dir='auto'][contains(.,'Computadores e Informática')]' is displayed.</msg>
+<status status="PASS" starttime="20230318 09:41:55.976" endtime="20230318 09:41:56.071"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:56.497" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-111.png"&gt;&lt;img src="selenium-screenshot-111.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:56.071" endtime="20230318 09:41:56.497"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:55.975" endtime="20230318 09:41:56.497"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:55.975" endtime="20230318 09:41:56.497"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:41:56.945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-112.png"&gt;&lt;img src="selenium-screenshot-112.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:41:56.498" endtime="20230318 09:41:56.945"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230318 09:41:56.945" endtime="20230318 09:41:59.113"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:56.498" endtime="20230318 09:41:59.113"/>
+</kw>
+<doc>esse teste verifica o menu Eletrônicos do site amazon.com.br
+e verifica o título da página</doc>
+<tag>categorias</tag>
+<tag>Menus</tag>
+<status status="PASS" starttime="20230318 09:41:48.016" endtime="20230318 09:41:59.114"/>
+</test>
+<test id="s1-t2" name="Caso de teste 02 - Categoria &quot;Computadores e Informática&quot;" line="23">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230318 09:41:59.118" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230318 09:41:59.118" endtime="20230318 09:42:00.215"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>3000</arg>
+<arg>1500</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230318 09:42:00.215" endtime="20230318 09:42:00.337"/>
+</kw>
+<status status="PASS" starttime="20230318 09:41:59.117" endtime="20230318 09:42:00.337"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" library="amazon_resources">
+<kw name="Acessar a home page do site Amazon.com.br" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230318 09:42:00.342" level="INFO">Opening url 'http://www.amazon.com.br/'</msg>
+<status status="PASS" starttime="20230318 09:42:00.341" endtime="20230318 09:42:02.673"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${BARRA_DE_MENUS}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${BARRA_DE_MENUS}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${BARRA_DE_MENUS}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230318 09:42:02.718" level="INFO">Element '//div[@id='nav-xshop']' is displayed.</msg>
+<status status="PASS" starttime="20230318 09:42:02.674" endtime="20230318 09:42:02.718"/>
+</kw>
+<msg timestamp="20230318 09:42:02.718" level="INFO">${BARRA_DE_MENUS} = True</msg>
+<status status="PASS" starttime="20230318 09:42:02.674" endtime="20230318 09:42:02.718"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${BARRA_DE_MENUS}' == 'False'</arg>
+<arg>reload Page</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230318 09:42:02.718" endtime="20230318 09:42:02.719"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:03.080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-113.png"&gt;&lt;img src="selenium-screenshot-113.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:02.719" endtime="20230318 09:42:03.080"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:00.340" endtime="20230318 09:42:03.080"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:00.339" endtime="20230318 09:42:03.080"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" library="amazon_resources">
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" library="amazon_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:42:03.081" endtime="20230318 09:42:03.114"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230318 09:42:03.115" level="INFO">Clicking element '//a[contains(.,'Eletrônicos')]'.</msg>
+<status status="PASS" starttime="20230318 09:42:03.114" endtime="20230318 09:42:05.703"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='a-size-base a-color-base apb-browse-refinements-indent-1 a-text-bold'][contains(.,'Eletrônicos e Tecnologia')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:42:05.703" endtime="20230318 09:42:05.812"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:06.225" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-114.png"&gt;&lt;img src="selenium-screenshot-114.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:05.812" endtime="20230318 09:42:06.225"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:03.081" endtime="20230318 09:42:06.225"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:03.081" endtime="20230318 09:42:06.225"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" library="amazon_resources" sourcename="Então o título da página deve ficar &quot;${TITULO}&quot;">
+<kw name="Verificar se o título da página fica &quot;${TITULO}&quot;" library="amazon_resources" sourcename="Verificar se o título da página fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230318 09:42:06.274" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<status status="PASS" starttime="20230318 09:42:06.226" endtime="20230318 09:42:06.274"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:06.801" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-115.png"&gt;&lt;img src="selenium-screenshot-115.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:06.274" endtime="20230318 09:42:06.802"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:06.226" endtime="20230318 09:42:06.802"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:06.226" endtime="20230318 09:42:06.802"/>
+</kw>
+<kw name="E o texto &quot;Eletrônicos e Tecnologia&quot; deve ser exibido na página" library="amazon_resources" sourcename="E o texto &quot;${frase}&quot; deve ser exibido na página">
+<kw name="Verificar se aparece a frase &quot;${FRASE}&quot;" library="amazon_resources" sourcename="Verificar se aparece a frase &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230318 09:42:06.804" endtime="20230318 09:42:06.962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HEADER_DEPARTAMENTOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230318 09:42:06.962" endtime="20230318 09:42:07.101"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:07.669" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:07.101" endtime="20230318 09:42:07.669"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:06.803" endtime="20230318 09:42:07.669"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:06.803" endtime="20230318 09:42:07.669"/>
+</kw>
+<kw name="E a categoria &quot;Computadores e Informática&quot; deve ser exibida na página" library="amazon_resources" sourcename="E a categoria &quot;${NOME_CATEGORIA}&quot; deve ser exibida na página">
+<kw name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;" library="amazon_resources" sourcename="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//span[@dir='auto'][contains(.,'${NOME_CATEGORIA}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230318 09:42:07.832" level="INFO">Element '//span[@dir='auto'][contains(.,'Computadores e Informática')]' is displayed.</msg>
+<status status="PASS" starttime="20230318 09:42:07.671" endtime="20230318 09:42:07.832"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:08.465" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-117.png"&gt;&lt;img src="selenium-screenshot-117.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:07.832" endtime="20230318 09:42:08.465"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:07.670" endtime="20230318 09:42:08.465"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:07.670" endtime="20230318 09:42:08.465"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230318 09:42:09.061" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230318 09:42:08.466" endtime="20230318 09:42:09.062"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230318 09:42:09.062" endtime="20230318 09:42:11.339"/>
+</kw>
+<status status="PASS" starttime="20230318 09:42:08.466" endtime="20230318 09:42:11.340"/>
+</kw>
+<doc>esse teste acessa o menu Eletrônicos do site amazon.com.br
+e verifica a categoria Computadores e informática</doc>
+<tag>categorias</tag>
+<tag>Menus</tag>
+<status status="PASS" starttime="20230318 09:41:59.116" endtime="20230318 09:42:11.341"/>
+</test>
+<doc>Essa suíte testa o site da amazon.com.br</doc>
+<status status="PASS" starttime="20230318 09:41:47.778" endtime="20230318 09:42:11.345"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">categorias</stat>
+<stat pass="2" fail="0" skip="0">Menus</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Amazon Testes  Gherkin Bdd">Amazon Testes  Gherkin Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

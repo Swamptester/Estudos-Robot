@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230318 09:20:05.651" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\João\.vscode\extensions\robocorp.robotframework-lsp-1.9.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Dado que estou na home page da Amazon.com.br">
+<msg timestamp="20230318 09:20:06.571" level="FAIL">No keyword with name 'Dado que estou na home page da Amazon.com.br' found.</msg>
+<status status="FAIL" starttime="20230318 09:20:06.571" endtime="20230318 09:20:06.571"/>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Bola de basquete&quot;">
+<status status="NOT RUN" starttime="20230318 09:20:06.572" endtime="20230318 09:20:06.572"/>
+</kw>
+<kw name="E clicar no botão de pesquisa">
+<status status="NOT RUN" starttime="20230318 09:20:06.573" endtime="20230318 09:20:06.573"/>
+</kw>
+<kw name="Então o produto &quot;Bola De Basquete De Borracha Medida Oficial Nº 7 Tamanho Padrão A Partir De 3 Anos Bola De Basquetball Para Quadra Esportes Qualidade PREMIUM SYANG&quot; deve ser mostrado na página">
+<status status="NOT RUN" starttime="20230318 09:20:06.574" endtime="20230318 09:20:06.574"/>
+</kw>
+<status status="PASS" starttime="20230318 09:20:05.685" endtime="20230318 09:20:10.568"/>
+</kw>
+<status status="PASS" starttime="20230318 09:20:05.685" endtime="20230318 09:20:10.568"/>
+</test>
+<status status="PASS" starttime="20230318 09:20:05.653" endtime="20230318 09:20:10.569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
